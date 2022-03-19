@@ -31,3 +31,8 @@ If jenkins has started, the following output will show:
      CGroup: /system.slice/jenkins.service
              └─841 /usr/bin/java -Djava.awt.headless=true -jar>
 ```
+
+## Starting Jenkins the first time
+
+*Getting the default password*
+`$ sudo cat /var/lib/jenkins/secrets/initialAdminPassword`
