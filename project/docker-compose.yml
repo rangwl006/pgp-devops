@@ -1,0 +1,11 @@
+version: "3"
+services:
+  hello-world:
+    container_name: hello-world
+    image: pgp-devops:${TAG}
+    working_dir: /pgp
+    volumes:
+      - .:/pgp:rw
+    stdin_open: true
+    tty: true
+    # entrypoint: /pgp/scripts/hello.sh
